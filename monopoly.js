@@ -1269,8 +1269,8 @@ function updatePosition() {
 
 	for (var x = 0; x < 40; x++) {
 		sq = square[x];
-		left = 0;
-		top = 0;
+		left = 20;
+		top = 20;
 
 		for (var y = turn; y <= pcount; y++) {
 
@@ -1688,7 +1688,7 @@ function chanceCommunityChest() {
 			communityChestCards.deck.splice(communityChestCards.index, 1);
 		}
 
-		popup("<img src='images/community_chest_icon.png' style='height: 50px; width: 53px; float: left; margin: 8px 8px 8px 0px;' /><div style='font-weight: bold; font-size: 16px; '>Chor Bazaar:</div><div style='text-align: justify;'>" + communityChestCards[communityChestIndex].text + "</div>", function() {
+		popup("<img src='images/chor.png' style='height: 50px; width: 53px; float: left; margin: 8px 8px 8px 0px;' /><div style='font-weight: bold; font-size: 16px; '>Chor Bazaar:</div><div style='text-align: justify;'>" + communityChestCards[communityChestIndex].text + "</div>", function() {
 			communityChestAction(communityChestIndex);
 		});
 
